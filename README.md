@@ -17,9 +17,9 @@ Log of events
 
 Googled: How to create a timeline. 
 
-Copied the steps on [Google Developers Timeline Tutorial]<https://developers.google.com/chart/interactive/docs/gallery/timeline>
+Copied the steps on [Google Developers Timeline Tutorial](https://developers.google.com/chart/interactive/docs/gallery/timeline)
 
-Into a the coding tool [JSFiddle]<http://jsfiddle.net/patrickm02L/bv8w7mva/24/>
+Into a the coding tool [JSFiddle](http://jsfiddle.net/patrickm02L/bv8w7mva/24/)
 
 ### DECEMBER 2014
 #### 14 Sunday
