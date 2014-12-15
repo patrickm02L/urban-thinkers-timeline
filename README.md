@@ -20,7 +20,6 @@ Copied the steps on [Google Developers Timeline Tutorial](https://developers.goo
 
 Into a the coding tool [JSFiddle](http://jsfiddle.net/patrickm02L/bv8w7mva/24/)
 
-### DECEMBER 2014
 #### 14 Sunday
 
 Created a Local Repository. Copied and pasted code into Atom Text Editor. Pushed code to my Github Repo. 
