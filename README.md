@@ -1,7 +1,6 @@
 #Urban Thinkers Timeline
 
 http://patrickm02l.github.io/urban-thinkers-timeline
-
 =======================
 
 ###Objective of the project
