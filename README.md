@@ -1,7 +1,6 @@
 #Urban Thinkers Timeline
 =======================
-
-###Objective of the porject
+###Objective of the project
 
 * Learn the basic understading of javascript
 * Visualize Data
