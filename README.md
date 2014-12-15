@@ -24,4 +24,6 @@ Used the coding tool [JSFiddle](http://jsfiddle.net/patrickm02L/bv8w7mva/24/) to
 
 Created a Local Repository on my hard drive. Copied and pasted code from JSFiddle into Atom Text Editor. Pushed code to my patrickm02L Github Repository. 
 
-Made sure that the code was set to [github pages](https://pages.github.com/) - gh-pages.
+#### 15 Monday
+
+Set up a gh-pages [github pages](https://pages.github.com/).
