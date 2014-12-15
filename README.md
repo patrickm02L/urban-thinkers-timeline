@@ -2,7 +2,7 @@
 =======================
 ###Objective of the project
 
-* Learn the basic understading of javascript
+* Learn the basic understanding of javascript
 * Visualize Data
 * Create a Resource for Urbanists
 
