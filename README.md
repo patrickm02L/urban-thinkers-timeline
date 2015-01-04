@@ -31,3 +31,10 @@ Created a Local Repository on my hard drive. Copied and pasted code from JSFiddl
 #### 15 Monday
 
 Set up a gh-pages [github pages](https://pages.github.com/).
+
+========
+![Preview](https://github.com/patrickm02L/urban-thinkers-timeline/blob/gh-pages/urban-thinkers-timeline.gif)
+
+
+
+
