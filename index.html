@@ -3,9 +3,10 @@
   <head>
    <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
 
-    <title>Top Urban Thinkers</title>
+    <title>Urban Thinkers Timeline</title>
 
     <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['timeline']}]}"></script>
     <script type="text/javascript">
@@ -114,16 +115,18 @@
   <body>
     <div class="container">
       <div class="center">
-        <h1>Visual Timeline of Top Urban Thinkers</h1>
+        <h1>Urban Thinkers Timeline</h1>
+          <p>Urbanists are listed alphabetically. Bars indicate age from <strong>Birth Date</strong> to <strong>Death Date</strong> or continue through the <strong>Present Date</strong> if the person is still alive.</p>
+          <p>Based on the Planetizen <a href=http://www.planetizen.com/topthinkers target="_blank"> 100 Top Urban Thinkers list </a>
+        </p>
       </div>
-    <p style="width: 900px" target="_blank">Urbanists are listed alphabetically. Bars indicate age from <strong>Birth Date</strong> to <strong>Death Date</strong> or continue through the <strong>Present Date</strong> if the person is still alive.</p>
-    <p>Based on the Planetizen <a href=http://www.planetizen.com/topthinkers> 100 Top Urban Thinkers list </a>
-    </div>
 
-  <div id="timeline" style="width: 900px; height: 500px;"></div>
+      <div id="timeline" style="width: 100%; height: 500px; padding: 20px 20px 0px 20px;"></div>
 
-  <p>The following people were excluded because no Date Birth data could be found:</p>
-  <p style="width: 900px">Bill Hillier, Carol Coletta, Christopher B. Leinberger, Dan Burden, Donovan Rypkema, Emily Talen, F. Kaid Benfield, Fred Kent, James Rojas, Janette Sadik-Khan, Julienne Hanson, Kennedy Lawson Smith, Larry R. Ford, Norman Krumholz, Reid Ewing, Robert J. Gibbs, Roberta Brandes Gratz, Scott Bernstein, Vitruvius, Walter Kulash </p>
+      <div class="center">
+        <p>The following people were excluded because no Date Birth data could be found:</p>
+        <p>Bill Hillier, Carol Coletta, Christopher B. Leinberger, Dan Burden, Donovan Rypkema, Emily Talen, F. Kaid Benfield, Fred Kent, James Rojas, Janette Sadik-Khan, Julienne Hanson, Kennedy Lawson Smith, Larry R. Ford, Norman Krumholz, Reid Ewing, Robert J. Gibbs, Roberta Brandes Gratz, Scott Bernstein, Vitruvius, Walter Kulash </p>
+      </div>
 
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
