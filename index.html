@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.css">
 
-    <title>Urban Thinkers Timeline</title>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
 
-    <script type="text/javascript" src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['timeline']}]}"></script>
-    <script type="text/javascript">
-    google.load("visualization", "1", {packages:["timeline"]});
+  <title>Urban Thinkers Timeline</title>
+
+  <script type="text/javascript"
+    src="https://www.google.com/jsapi?autoload={'modules':[{'name':'visualization','version':'1','packages':['timeline']}]}"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", { packages: ["timeline"] });
     google.setOnLoadCallback(drawChart);
 
     function drawChart() {
@@ -24,122 +26,131 @@
       dataTable.addColumn({ type: 'date', id: 'End' });
 
       dataTable.addRows([
-        [ '1', 'Allan Jacobs', new Date(1928, 12, 29), new Date( ) ],
-        [ '2', 'Andres Duany', new Date(1949, 9, 7), new Date( ) ],
-        [ '3', 'Anthony Downs', new Date(1928, 12, 29), new Date( ) ],
-        [ '4', 'Baron Haussmann', new Date(1809, 3, 27), new Date(1891, 1, 11) ],
-        [ '5', 'Bruce Katz', new Date(1959, 6, 21), new Date( ) ],
-        [ '6', 'Buckminster Fuller', new Date(1895, 6, 12), new Date(1983, 6, 1) ],
-        [ '7', 'Camillo Sitte', new Date(1843, 4, 17), new Date(1903, 11, 16) ],
-        [ '8', 'Charles, Prince of Wales', new Date(1948, 11, 14), new Date( ) ],
-        [ '9', 'Christopher Alexander', new Date(1936, 10, 4), new Date( ) ],
-        [ '10', 'Colin Rowe', new Date(1920,0,0), new Date(1999, 11, 5) ],
-        [ '11', 'Daniel Burnham', new Date(1846, 9, 4), new Date(1912, 6, 1) ],
-        [ '12', 'David Harvey', new Date(1935, 10, 31), new Date( ) ],
-        [ '13', 'Donald Appleyard', new Date(1928, 7, 26), new Date(1982, 9, 23) ],
-        [ '14', 'Donald Shoup', new Date(1938, 8, 24), new Date( ) ],
-        [ '15', 'Earl Blumenauer', new Date(1948, 8, 16), new Date( ) ],
-        [ '16', 'Ebenezer Howard', new Date(1850, 1, 29), new Date(1928, 1, 29) ],
-        [ '17', 'Edmund Bacon', new Date(1910, 5, 2), new Date(2005, 10, 14) ],
-        [ '18', 'Edward Glaeser', new Date(1967, 5, 1), new Date( ) ],
-        [ '19', 'Elizabeth Plater-Zyberk', new Date(1950, 12, 20), new Date( ) ],
-        [ '20', 'Enrique Peñalosa', new Date(1954, 9, 30), new Date( ) ],
-        [ '21', 'Ernest Burgess', new Date(1886, 5, 16), new Date(1966, 12, 27) ],
-        [ '22', 'Frank Lloyd Wright', new Date(1867, 6, 8), new Date(1959, 4, 9) ],
-        [ '23', 'Frederick Law Olmsted', new Date(1822, 4, 26), new Date(1903, 8, 28) ],
-        [ '24', 'Frederick Law Olmsted Jr.', new Date(1870, 7, 24), new Date(1957, 12, 25) ],
-        [ '25', 'Georg Simmel', new Date(1858, 3, 1), new Date(1918, 9, 28) ],
-        [ '26', 'Guy Debord', new Date(1931, 12, 28), new Date(1994, 11, 30) ],
-        [ '27', 'Harvey Molotch', new Date(1940, 1, 3), new Date( ) ],
-        [ '28', 'Henri Lefebvre', new Date(1901, 6, 16), new Date(1991, 6, 29) ],
-        [ '29', 'Henry Ford', new Date(1863, 7, 30), new Date(1947, 4, 7) ],
-        [ '30', 'Henry George', new Date(1839, 9, 2), new Date(1897, 10, 29) ],
-        [ '31', 'Herbert J. Gans', new Date(1927, 5, 7), new Date( ) ],
-        [ '32', 'Ian McHarg', new Date(1920, 11, 20), new Date(2001, 3, 5) ],
-        [ '33', 'Ildefonso Cerdá Suñer', new Date(1815, 12, 23), new Date(1876, 8, 21) ],
-        [ '34', 'Jacob Riis', new Date(1849, 5, 3), new Date(1914, 5, 26) ],
-        [ '35', 'Jaime Lerner', new Date(1937, 12, 17), new Date( ) ],
-        [ '36', 'James Howard Kunstler', new Date(1948, 10, 19), new Date( ) ],
-        [ '37', 'James Rouse', new Date(1914, 4, 26), new Date(1996, 4, 9) ],
-        [ '38', 'Jan Gehl', new Date(1936, 9, 17), new Date( ) ],
-        [ '39', 'Jane Jacobs', new Date(1916, 5, 4), new Date(2006, 4, 25) ],
-        [ '40', 'Joel Garreau', new Date(1948,0,0), new Date( ) ],
-        [ '41', 'John Friedmann', new Date(1926, 4, 16), new Date( ) ],
-        [ '42', 'John Gilderbloom', new Date(1952, 10, 0), new Date( ) ],
-        [ '43', 'John Nolen', new Date(1869, 6, 14), new Date(1937, 2, 18) ],
-        [ '44', 'John Norquist', new Date(1949, 10, 22), new Date( ) ],
-        [ '45', 'Kevin A. Lynch', new Date(1918, 0, 0), new Date(1984, 0, 0) ],
-        [ '46', 'Le Corbusier', new Date(1887, 10, 6), new Date(1965, 8, 27) ],
-        [ '47', 'Léon Krier', new Date(1946, 4, 7), new Date( ) ],
-        [ '48', 'Lewis Mumford', new Date(1895, 10, 19), new Date(1990, 1, 26) ],
-        [ '49', 'Manuel Castells', new Date(1942, 2, 9), new Date( ) ],
-        [ '50', 'Mike Davis', new Date(1946, 0, 0), new Date( ) ],
-        [ '51', 'Myron Orfield', new Date(1961, 7, 27), new Date( ) ],
-        [ '52', 'Nikos A. Salingaros', new Date(1952, 0, 0), new Date( ) ],
-        [ '53', 'Paolo Soleri', new Date(1919, 6, 21), new Date(2013, 4, 9) ],
-        [ '54', 'Patrick Geddes', new Date(1854, 10, 2), new Date(1932, 4, 17) ],
-        [ '55', 'Paul Crawford', new Date(1963, 0, 0), new Date( ) ],
-        [ '56', 'Paul Davidoff', new Date(1930, 0, 0), new Date(1984, 0, 0) ],
-        [ '57', 'Peter Calthorpe', new Date(1949, 0, 0), new Date( ) ],
-        [ '58', 'Peter Hall', new Date(1932, 3, 19), new Date(2014, 7, 30) ],
-        [ '59', 'Pierre-Charles LEnfant', new Date(1754, 8, 2), new Date(1825, 6, 14) ],
-        [ '60', 'Rem Koolhaas', new Date(1944, 11, 17), new Date( ) ],
-        [ '61', 'Richard Florida', new Date(1957, 0, 0), new Date( ) ],
-        [ '62', 'Richard M. Daley', new Date(1942, 4, 24), new Date( ) ],
-        [ '63', 'Richard Rogers', new Date(1933, 7, 23), new Date( ) ],
-        [ '64', 'Richard Sennett', new Date(1943, 1, 1), new Date( ) ],
-        [ '65', 'Robert Moses', new Date(1888, 12, 18), new Date(1981, 7, 29) ],
-        [ '66', 'Saskia Sassen', new Date(1949, 1, 5), new Date( ) ],
-        [ '67', 'Saverio Muratori', new Date(1910, 0, 0), new Date(1973, 0, 0) ],
-        [ '68', 'Sir Raymond Unwin', new Date(1863, 11, 2), new Date(1940, 6, 2) ],
-        [ '69', 'Stefanos Polyzoides', new Date(1946, 2, 16), new Date( ) ],
-        [ '70', 'Thomas Jefferson', new Date(1743, 4, 13), new Date(1826, 7, 4) ],
-        [ '71', 'Timothy Beatley', new Date(1957, 0, 0), new Date( ) ],
-        [ '72', 'Walt Disney', new Date(1901, 12, 5), new Date(1966, 12, 15) ],
-        [ '73', 'Walter Benjamin', new Date(1892, 7, 15), new Date(1940, 9, 26) ],
-        [ '74', 'Wendell Berry', new Date(1934, 8, 5), new Date( ) ],
-        [ '75', 'William Fulton', new Date(1955, 9, 26), new Date( ) ],
-        [ '76', 'William H. Whyte', new Date(1917, 10, 1), new Date(1999, 1, 12) ],
-        [ '77', 'William Levitt', new Date(1907, 2, 11), new Date(1994, 1, 28) ],
-        [ '78', 'William McDonough', new Date(1951, 2, 21), new Date( ) ]]);
+        ['1', 'Allan Jacobs', new Date(1928, 12, 29), new Date()],
+        ['2', 'Andres Duany', new Date(1949, 9, 7), new Date()],
+        ['3', 'Anthony Downs', new Date(1928, 12, 29), new Date()],
+        ['4', 'Baron Haussmann', new Date(1809, 3, 27), new Date(1891, 1, 11)],
+        ['5', 'Bruce Katz', new Date(1959, 6, 21), new Date()],
+        ['6', 'Buckminster Fuller', new Date(1895, 6, 12), new Date(1983, 6, 1)],
+        ['7', 'Camillo Sitte', new Date(1843, 4, 17), new Date(1903, 11, 16)],
+        ['8', 'Charles, Prince of Wales', new Date(1948, 11, 14), new Date()],
+        ['9', 'Christopher Alexander', new Date(1936, 10, 4), new Date()],
+        ['10', 'Colin Rowe', new Date(1920, 0, 0), new Date(1999, 11, 5)],
+        ['11', 'Daniel Burnham', new Date(1846, 9, 4), new Date(1912, 6, 1)],
+        ['12', 'David Harvey', new Date(1935, 10, 31), new Date()],
+        ['13', 'Donald Appleyard', new Date(1928, 7, 26), new Date(1982, 9, 23)],
+        ['14', 'Donald Shoup', new Date(1938, 8, 24), new Date()],
+        ['15', 'Earl Blumenauer', new Date(1948, 8, 16), new Date()],
+        ['16', 'Ebenezer Howard', new Date(1850, 1, 29), new Date(1928, 1, 29)],
+        ['17', 'Edmund Bacon', new Date(1910, 5, 2), new Date(2005, 10, 14)],
+        ['18', 'Edward Glaeser', new Date(1967, 5, 1), new Date()],
+        ['19', 'Elizabeth Plater-Zyberk', new Date(1950, 12, 20), new Date()],
+        ['20', 'Enrique Peñalosa', new Date(1954, 9, 30), new Date()],
+        ['21', 'Ernest Burgess', new Date(1886, 5, 16), new Date(1966, 12, 27)],
+        ['22', 'Frank Lloyd Wright', new Date(1867, 6, 8), new Date(1959, 4, 9)],
+        ['23', 'Frederick Law Olmsted', new Date(1822, 4, 26), new Date(1903, 8, 28)],
+        ['24', 'Frederick Law Olmsted Jr.', new Date(1870, 7, 24), new Date(1957, 12, 25)],
+        ['25', 'Georg Simmel', new Date(1858, 3, 1), new Date(1918, 9, 28)],
+        ['26', 'Guy Debord', new Date(1931, 12, 28), new Date(1994, 11, 30)],
+        ['27', 'Harvey Molotch', new Date(1940, 1, 3), new Date()],
+        ['28', 'Henri Lefebvre', new Date(1901, 6, 16), new Date(1991, 6, 29)],
+        ['29', 'Henry Ford', new Date(1863, 7, 30), new Date(1947, 4, 7)],
+        ['30', 'Henry George', new Date(1839, 9, 2), new Date(1897, 10, 29)],
+        ['31', 'Herbert J. Gans', new Date(1927, 5, 7), new Date()],
+        ['32', 'Ian McHarg', new Date(1920, 11, 20), new Date(2001, 3, 5)],
+        ['33', 'Ildefonso Cerdá Suñer', new Date(1815, 12, 23), new Date(1876, 8, 21)],
+        ['34', 'Jacob Riis', new Date(1849, 5, 3), new Date(1914, 5, 26)],
+        ['35', 'Jaime Lerner', new Date(1937, 12, 17), new Date()],
+        ['36', 'James Howard Kunstler', new Date(1948, 10, 19), new Date()],
+        ['37', 'James Rouse', new Date(1914, 4, 26), new Date(1996, 4, 9)],
+        ['38', 'Jan Gehl', new Date(1936, 9, 17), new Date()],
+        ['39', 'Jane Jacobs', new Date(1916, 5, 4), new Date(2006, 4, 25)],
+        ['40', 'Joel Garreau', new Date(1948, 0, 0), new Date()],
+        ['41', 'John Friedmann', new Date(1926, 4, 16), new Date()],
+        ['42', 'John Gilderbloom', new Date(1952, 10, 0), new Date()],
+        ['43', 'John Nolen', new Date(1869, 6, 14), new Date(1937, 2, 18)],
+        ['44', 'John Norquist', new Date(1949, 10, 22), new Date()],
+        ['45', 'Kevin A. Lynch', new Date(1918, 0, 0), new Date(1984, 0, 0)],
+        ['46', 'Le Corbusier', new Date(1887, 10, 6), new Date(1965, 8, 27)],
+        ['47', 'Léon Krier', new Date(1946, 4, 7), new Date()],
+        ['48', 'Lewis Mumford', new Date(1895, 10, 19), new Date(1990, 1, 26)],
+        ['49', 'Manuel Castells', new Date(1942, 2, 9), new Date()],
+        ['50', 'Mike Davis', new Date(1946, 0, 0), new Date()],
+        ['51', 'Myron Orfield', new Date(1961, 7, 27), new Date()],
+        ['52', 'Nikos A. Salingaros', new Date(1952, 0, 0), new Date()],
+        ['53', 'Paolo Soleri', new Date(1919, 6, 21), new Date(2013, 4, 9)],
+        ['54', 'Patrick Geddes', new Date(1854, 10, 2), new Date(1932, 4, 17)],
+        ['55', 'Patrick McDonnell', new Date(1981, 6, 4), new Date()],
+        ['55', 'Paul Crawford', new Date(1963, 0, 0), new Date()],
+        ['56', 'Paul Davidoff', new Date(1930, 0, 0), new Date(1984, 0, 0)],
+        ['57', 'Peter Calthorpe', new Date(1949, 0, 0), new Date()],
+        ['58', 'Peter Hall', new Date(1932, 3, 19), new Date(2014, 7, 30)],
+        ['59', 'Pierre-Charles LEnfant', new Date(1754, 8, 2), new Date(1825, 6, 14)],
+        ['60', 'Rem Koolhaas', new Date(1944, 11, 17), new Date()],
+        ['61', 'Richard Florida', new Date(1957, 0, 0), new Date()],
+        ['62', 'Richard M. Daley', new Date(1942, 4, 24), new Date()],
+        ['63', 'Richard Rogers', new Date(1933, 7, 23), new Date()],
+        ['64', 'Richard Sennett', new Date(1943, 1, 1), new Date()],
+        ['65', 'Robert Moses', new Date(1888, 12, 18), new Date(1981, 7, 29)],
+        ['66', 'Saskia Sassen', new Date(1949, 1, 5), new Date()],
+        ['67', 'Saverio Muratori', new Date(1910, 0, 0), new Date(1973, 0, 0)],
+        ['68', 'Sir Raymond Unwin', new Date(1863, 11, 2), new Date(1940, 6, 2)],
+        ['69', 'Stefanos Polyzoides', new Date(1946, 2, 16), new Date()],
+        ['70', 'Thomas Jefferson', new Date(1743, 4, 13), new Date(1826, 7, 4)],
+        ['71', 'Timothy Beatley', new Date(1957, 0, 0), new Date()],
+        ['72', 'Walt Disney', new Date(1901, 12, 5), new Date(1966, 12, 15)],
+        ['73', 'Walter Benjamin', new Date(1892, 7, 15), new Date(1940, 9, 26)],
+        ['74', 'Wendell Berry', new Date(1934, 8, 5), new Date()],
+        ['75', 'William Fulton', new Date(1955, 9, 26), new Date()],
+        ['76', 'William H. Whyte', new Date(1917, 10, 1), new Date(1999, 1, 12)],
+        ['77', 'William Levitt', new Date(1907, 2, 11), new Date(1994, 1, 28)],
+        ['78', 'William McDonough', new Date(1951, 2, 21), new Date()]]);
 
-        var options = {
-          timeline: { showRowLabels: true }
-        };
+      var options = {
+        timeline: { showRowLabels: true }
+      };
 
-        chart.draw(dataTable, options);
-      }
-      </script>
-  </head>
+      chart.draw(dataTable, options);
+    }
+  </script>
+</head>
 
-  <body>
-    <div class="container">
-      <div class="center">
-        <h1>Urban Thinkers Timeline</h1>
-          <p>Urbanists are listed alphabetically. Bars indicate age from <strong>Birth Date</strong> to <strong>Death Date</strong> or continue through the <strong>Present Date</strong> if the person is still alive.</p>
-          <p>Based on the Planetizen <a href=http://www.planetizen.com/topthinkers target="_blank"> 100 Top Urban Thinkers list </a>
-        </p>
-      </div>
+<body>
+  <div class="container">
+    <div class="center">
+      <h1>Urban Thinkers Timeline</h1>
+      <p>Urbanists are listed alphabetically. Bars indicate age from <strong>Birth Date</strong> to <strong>Death
+          Date</strong> or continue through the <strong>Present Date</strong> if the person is still alive.</p>
+      <p>Based on the Planetizen <a href=http://www.planetizen.com/topthinkers target="_blank"> 100 Top Urban Thinkers
+          list </a>
+      </p>
+    </div>
 
-      <div id="timeline" style="width: 100%; height: 500px; padding: 20px 20px 0px 20px;"></div>
+    <div id="timeline" style="width: 100%; height: 500px; padding: 20px 20px 0px 20px;"></div>
 
-      <div class="center">
-        <p>The following people were excluded because no Date Birth data could be found:</p>
-        <p>Bill Hillier, Carol Coletta, Christopher B. Leinberger, Dan Burden, Donovan Rypkema, Emily Talen, F. Kaid Benfield, Fred Kent, James Rojas, Janette Sadik-Khan, Julienne Hanson, Kennedy Lawson Smith, Larry R. Ford, Norman Krumholz, Reid Ewing, Robert J. Gibbs, Roberta Brandes Gratz, Scott Bernstein, Vitruvius, Walter Kulash </p>
-      </div>
+    <div class="center">
+      <p>The following people were excluded because no Date Birth data could be found:</p>
+      <p>Bill Hillier, Carol Coletta, Christopher B. Leinberger, Dan Burden, Donovan Rypkema, Emily Talen, F. Kaid
+        Benfield, Fred Kent, James Rojas, Janette Sadik-Khan, Julienne Hanson, Kennedy Lawson Smith, Larry R. Ford,
+        Norman Krumholz, Reid Ewing, Robert J. Gibbs, Roberta Brandes Gratz, Scott Bernstein, Vitruvius, Walter Kulash
+      </p>
+    </div>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-  ga('create', 'UA-53246637-1', 'auto');
-  ga('send', 'pageview');
+      ga('create', 'UA-53246637-1', 'auto');
+      ga('send', 'pageview');
 
-</script>
+    </script>
 
-  <br>
+    <br>
 
-  </body>
+</body>
+
 </html>
