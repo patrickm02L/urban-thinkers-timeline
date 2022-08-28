@@ -1,10 +1,4 @@
-#Urban Thinkers Timeline
-
-http://patrickm02l.github.io/urban-thinkers-timeline
-
-========
-
-###Objective of the project
+### Objective of the project
 
 * Learn basic understanding of javascript
 * Visualize Data
